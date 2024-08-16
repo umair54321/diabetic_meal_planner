@@ -4,7 +4,7 @@ import anthropic
 
 # Initialize the Claude client
 
-api_key = st.secretes["claude_api_key"]
+api_key = st.secrets["claude_api_key"]
 client = anthropic.Anthropic(api_key=api_key)
 
 def get_meal_plan(fasting_sugar, pre_meal_sugar, post_meal_sugar, dietary_preferences):
